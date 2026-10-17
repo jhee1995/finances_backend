@@ -1,0 +1,25 @@
+{
+  "name": "finances-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API service for Finances Manager",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "NODE_ENV=test node --test tests/**/*.test.js",
+    "test:coverage": "NODE_ENV=test node --test --experimental-test-coverage tests/**/*.test.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "argon2": "^0.45.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "pg": "^8.13.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
